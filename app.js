@@ -14,6 +14,7 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 
+// Inside mongoose.connect, we are using the url of our database, which we have created in mongoDB atlas.
 mongoose.connect('mongodb+srv://piyush28:piyush94145@cluster0.jhrdy.mongodb.net/GitProfileDemo');
 
 var db= mongoose.connection;
