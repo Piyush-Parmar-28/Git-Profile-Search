@@ -1,0 +1,81 @@
+.profileImage{
+    height: 300px;
+}
+
+.box1{
+    background-color: #63a0ff;
+
+    padding: 4px 10px; 
+    margin-top: 0.2rem; 
+    border-radius: 5px;
+    display: inline-block;
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.box2{
+    background-color: #f76b51;
+
+    padding: 4px 10px; 
+    margin-top: 0.2rem; 
+    border-radius: 5px;
+    display: inline-block;
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.box3{
+    background-color: #49bf00;
+
+    padding: 4px 10px; 
+    margin-top: 0.2rem; 
+    border-radius: 5px;
+    display: inline-block;
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.box4{
+    background-color: #2c9a45;
+
+    padding: 4px 10px; 
+    margin-top: 0.2rem; 
+    border-radius: 5px;
+    display: inline-block;
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.box5{
+    background-color: #ff5add;
+
+    padding: 4px 10px; 
+    margin-top: 0.2rem; 
+    border-radius: 5px;
+    display: inline-block;
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.box6{
+    background-color: #f9b626;
+
+    padding: 4px 10px; 
+    margin-top: 0.2rem; 
+    border-radius: 5px;
+    display: inline-block;
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media screen and (max-width: 320px) {
+    .profileImage{
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .profileImage{
+        height: 200px;
+    }
+}

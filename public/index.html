@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i">
+
+    <!-- Fontawesome Icons -->
+    <script src="https://kit.fontawesome.com/703cfd77f3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark navbar-custom">
+        <div class="container"><a class="navbar-brand" href="#">Git Profile Search</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navbarResponsive"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item" data-bs-toggle="modal" data-bs-target="#loginModal"><a class="nav-link" href="#">Login</a></li>
+                    <li class="nav-item" data-bs-toggle="modal" data-bs-target="#signupModal"><a class="nav-link" href="#">Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="text-center text-white masthead">
+        <div class="masthead-content">
+            <div class="container">
+                <h1 class="masthead-heading mb-0">One Site</h1>
+                <h2 class="masthead-subheading mb-0">To find all the profiles...</h2>
+
+                <a class="btn btn-primary btn-xl rounded-pill mt-5 border-0" data-bs-toggle="modal" data-bs-target="#loginModal" role="button" href="#" style="background-color: rgb(225, 0, 255);">Login</a>
+
+                <a class="btn btn-primary btn-xl rounded-pill mt-5 border-0" data-bs-toggle="modal" data-bs-target="#signupModal" role="button" href="#" style="background-color: rgb(225, 0, 255);">Sign Up</a>
+            </div>
+        </div>
+        <div class="bg-circle-1 bg-circle"></div>
+        <div class="bg-circle-2 bg-circle"></div>
+        <div class="bg-circle-3 bg-circle"></div>
+        <div class="bg-circle-4 bg-circle"></div>
+    </header>
+
+
+    <!-- Login Modal -->
+
+    <!-- Button trigger modal -->
+    <!-- data-bs-toggle="modal" data-bs-target="#exampleModal" --> <!-- This is the trigger code to trigger the modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1"
+    aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                <button type="button" class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="/login" method="post">
+
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label" >Email address</label>
+
+                        <input type="email" class="form-control"
+                            aria-describedby="emailHelp" name="email" id="email" placeholder="E-Mail" required>
+
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" name="password" id="password" placeholder="Password " required>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <button type="submit" id="submitDetails" name="submitDetails" value="Submit" class="btn btn-primary">Login</button>
+        
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+
+                </form>
+
+            </div>
+            
+        </div>
+    </div>
+    </div>
+
+
+    <!-- SignUp Modal -->
+
+    <!-- Button trigger modal -->
+    <!-- data-bs-toggle="modal" data-bs-target="#exampleModal" --> <!-- This is the trigger code to trigger the modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1"
+    aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">SignUp</h5>
+                <button type="button" class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <form action="/sign_up" method="post">
+
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label" >Name</label>
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+
+                        <input type="email" class="form-control" name="email" id="email" placeholder="E-Mail" required>
+                        
+                        <div id="bemailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+
+                        <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Phone Number</label>
+
+                        <input type="password" class="form-control" name="phone" id="phone" placeholder="Phone Number" required>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <button type="submit" id="submitDetails" name="submitDetails" value="Submit" class="btn btn-primary">Create Account</button>
+        
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+
+                </form>
+
+            </div>
+            
+        </div>
+    </div>
+    </div>
+
+
+
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5"><img class="rounded-circle img-fluid h-100" src="assets/img/git.jpg"></div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-5">
+                        <h2 class="display-4">Git Profiles...</h2>
+                        <p>Find all the Git Hub profiles with extreme ease, by just searching the username. <br>Here, you will find all the important details of any GitHub profile, such as Repos, Followers, Following, etc...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pb-3 pt-4 bg-dark">
+
+        <p class="text-center text-white border-bottom mx-5 pb-3" style="font-size: larger; font-family: 'Times New Roman', Times, serif;">This Website is a copyright property <i class="far fa-copyright"></i> of Piyush Parmar.</p>
+  
+        <p class="text-center text-white mb-0" style="font-size: larger; font-family: 'Times New Roman', Times, serif;">All Rights Reserved.</p>
+    </footer>
+
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
